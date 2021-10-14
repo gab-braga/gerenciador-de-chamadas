@@ -1,0 +1,40 @@
+.root {
+    -fx-background: #B3F9BF;
+}
+
+.button {
+    -fx-cursor: hand;
+}
+
+.button-main-panel {
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+    -fx-max-height: 70px;
+    -fx-max-width: 70px;
+    -fx-background-radius: 50%;
+}
+
+.button-default {
+    -fx-font-weight: bold;
+    -fx-background-color: #4FBC5E;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-close {
+    -fx-font-weight: bold;
+    -fx-background-color: #FF3F3F;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-main-panel:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+.details .text {
+    -fx-font-size: 18px;
+}
+
+.details .label {
+    -fx-font-weight: bold;
+}

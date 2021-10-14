@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" styleClass="details" stylesheets="@css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetailsController">
+   <children>
+      <Label layoutX="42.0" layoutY="46.0" text="Nome:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="30.0" />
+      <Text fx:id="textName" layoutX="45.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="-" wrappingWidth="420.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="60.0" />
+      <Label layoutX="52.0" layoutY="56.0" text="Telefone:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="90.0" />
+      <Text fx:id="textPhone" layoutX="55.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="-" wrappingWidth="420.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="120.0" />
+      <Label layoutX="62.0" layoutY="66.0" text="Status:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="150.0" />
+      <Text fx:id="textStatus" layoutX="65.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="-" wrappingWidth="420.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="180.0" />
+      <Label layoutX="72.0" layoutY="76.0" text="Descrição:" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="210.0" />
+      <Text fx:id="textDescription" layoutX="50.0" layoutY="210.0" strokeType="INSIDE" strokeWidth="0.0" styleClass="text" text="-" wrappingWidth="420.0" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="240.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Text>
+      <Button fx:id="buttonClose" layoutX="388.0" layoutY="441.0" mnemonicParsing="false" styleClass="button-close" text="Fechar" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0" />
+   </children>
+</AnchorPane>
