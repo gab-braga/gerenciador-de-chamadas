@@ -88,9 +88,10 @@ public class EditRegisterController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         fieldPhone.setDisable(true);
+
         fillValuesFieldStatus();
 
-        Helper.addTextLimiter(fieldPhone, 20);
+        Helper.addTextLimiter(fieldPhone, 11);
         Helper.addTextLimiter(fieldName, 80);
         Helper.addTextLimiter(fieldDescription, 255);
 

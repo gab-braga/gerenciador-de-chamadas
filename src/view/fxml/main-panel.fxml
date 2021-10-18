@@ -31,7 +31,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/Group%203.png" />
+                              <Image url="@icons/Group3.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -40,7 +40,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/Group%202.png" />
+                              <Image url="@icons/Group2.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -49,7 +49,7 @@
                      <graphic>
                         <ImageView fitHeight="150.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@icons/Group%204.png" />
+                              <Image url="@icons/Group4.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -78,6 +78,7 @@
                               <MenuItem fx:id="itemDetails" mnemonicParsing="false" text="Detalhes" />
                               <MenuItem fx:id="itemEdit" mnemonicParsing="false" text="Editar" />
                               <MenuItem fx:id="itemDelete" mnemonicParsing="false" text="Excluir" />
+                              <MenuItem fx:id="itemHelp" mnemonicParsing="false" text="Ajuda" />
                           </items>
                         </ContextMenu>
                      </contextMenu>

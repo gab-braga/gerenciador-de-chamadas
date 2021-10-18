@@ -6,6 +6,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -15,6 +17,10 @@ import view.AddRegister;
 import view.Details;
 import view.EditRegister;
 
+import java.awt.*;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -65,6 +71,9 @@ public class MainController implements Initializable {
     @FXML
     private MenuItem itemDelete;
 
+    @FXML
+    private MenuItem itemHelp;
+
     private boolean isFilter = false;
 
     private String phoneFilter;
@@ -73,7 +82,6 @@ public class MainController implements Initializable {
         List<Call> calls = Connect.queryAllCalls();
         if(isFilter) {
             calls = Connect.queryCallsFiltered(this.phoneFilter);
-            isFilter = false;
         }
         if(calls.size() > 0) {
             columnName.setCellValueFactory(new PropertyValueFactory<Call, String>("name"));
@@ -84,6 +92,7 @@ public class MainController implements Initializable {
             ObservableList<Call> items = FXCollections.observableArrayList(calls);
             tableCalls.setItems(items);
             tableCalls.refresh();
+            isFilter = false;
         }
         else{
             if(isFilter) {
@@ -92,6 +101,7 @@ public class MainController implements Initializable {
                 alert.setHeaderText(null);
                 alert.setTitle("ATENÇÃO");
                 alert.showAndWait();
+                isFilter = false;
             }
         }
     }
@@ -159,6 +169,20 @@ public class MainController implements Initializable {
         }
     }
 
+    private void help() {
+        String url = "https://github.com/F-Gabriel-Braga/gerenciador-de-chamadas/blob/master/README.md";
+        try {
+            URI link = new URI(url);
+            Desktop.getDesktop().browse(link);
+        }
+        catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+            DialogBoxes.errorLink(url);
+        }
+    }
+
     private void close() {
         ((Stage) root.getScene().getWindow()).close();
     }
@@ -193,6 +217,10 @@ public class MainController implements Initializable {
 
         itemDelete.setOnAction(action -> {
             deleteRegister();
+        });
+
+        itemHelp.setOnAction(action -> {
+            help();
         });
     }
 }

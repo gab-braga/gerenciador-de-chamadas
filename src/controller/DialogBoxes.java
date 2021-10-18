@@ -94,6 +94,14 @@ public abstract class DialogBoxes {
         alert.showAndWait();
     }
 
+    public static void errorLink(String link) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("ERRO");
+        alert.setHeaderText(null);
+        alert.setContentText(String.format("Não foi possível localizar o navegador!\nLink: %s", link));
+        alert.showAndWait();
+    }
+
     public static boolean confirmationDelete() {
         boolean flag = false;
         Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);

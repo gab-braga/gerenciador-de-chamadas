@@ -145,7 +145,7 @@ public class Connect {
             openConnection();
             try {
                 if(useDataBase()) {
-                    String sql = "SELECT * FROM callhistory WHERE phone LIKE '"+phone+"%' ORDER BY nameRegister;";
+                    String sql = "SELECT * FROM callhistory WHERE phone LIKE '%"+phone+"%' ORDER BY nameRegister;";
                     PreparedStatement statement = connection.prepareStatement(sql);
                     calls = getListCalls(statement.executeQuery());
                 }

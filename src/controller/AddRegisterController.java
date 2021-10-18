@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+
 import model.Call;
 import model.Connect;
 
@@ -90,7 +91,7 @@ public class AddRegisterController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         fillValuesFieldStatus();
 
-        Helper.addTextLimiter(fieldPhone, 20);
+        Helper.addTextLimiter(fieldPhone, 11);
         Helper.addTextLimiter(fieldName, 80);
         Helper.addTextLimiter(fieldDescription, 255);
 

@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.Call;
@@ -32,6 +33,7 @@ public class Details extends Application {
             stage.initOwner(Main.getWindow());
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setTitle("Detalhes");
+            stage.getIcons().add(new Image("/view/fxml/icons/Group1.png"));
             stage.setResizable(false);
             stage.show();
         }

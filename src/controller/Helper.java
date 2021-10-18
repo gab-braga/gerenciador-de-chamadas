@@ -15,7 +15,6 @@ public class Helper {
             Long.parseLong(text);
             return true;
         } catch (NumberFormatException e) {
-            e.printStackTrace();
             return false;
         }
     }
