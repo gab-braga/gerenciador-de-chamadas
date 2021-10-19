@@ -22,3 +22,5 @@ como adicionar, editar e excluir. Além disso, ele possui um mecanismo de filtra
 ![Adicionar Registro](https://github.com/F-Gabriel-Braga/gerenciador-de-chamadas/blob/master/images/gerenciador-de-chamadas3.png)
 ### Detalhes do Registro
 ![Adicionar Registro](https://github.com/F-Gabriel-Braga/gerenciador-de-chamadas/blob/master/images/gerenciador-de-chamadas4.png)
+
+## [Guia de Usuário](https://github.com/F-Gabriel-Braga/gerenciador-de-chamadas/blob/master/USERGUIDE.md)
